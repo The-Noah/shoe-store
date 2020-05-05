@@ -1,0 +1,16 @@
+{
+  "name": "shoe-store",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "static-site-generator",
+    "watch": "static-site-generator watch",
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [],
+  "author": "The Noah (https://github.com/The-Noah)",
+  "license": "MIT",
+  "devDependencies": {
+    "@the-noah/static-site-generator": "^1.0.2"
+  }
+}

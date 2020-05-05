@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="The Noah">
+  <meta name="description" content="Shoe store website design">
+  <title>Shoe Store</title>
+  <style><%- css.style %></style>
+</head>
+<body>
+  <header>
+    <span class="logo">Shoe Store</span>
+  </header>
+  <noscript style="text-align:center">Please enable JavaScript</noscript>
+  <main>
+    <div class="panel">
+      <h1>Shoe</h1>
+      <div class="rating"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="price">$60</div>
+      <label>Size</label>
+      <div class="dropdown">
+        <span>Select Size</span>
+        <div>
+          <span>Small</span>
+          <span>Medium</span>
+          <span>Large</span>
+          <span>Extra Large</span>
+        </div>
+      </div>
+      <label>Quantity</label>
+      <div class="dropdown">
+        <span>1</span>
+        <div>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+        </div>
+      </div>
+      <button>Buy</button>
+    </div>
+    <div class="selector">
+      <span>&#5130;</span>
+      <span>&#5125;</span>
+    </div>
+  </main>
+  <footer>Copyright &copy; 2020 <a href="https://the-noah.github.io" target="_blank" rel="noopener noreferrer">The Noah</a></footer>
+  <script>const shoes=JSON.parse('<%- JSON.stringify(shoes) %>');<%- js.app %></script>
+</body>
+</html>

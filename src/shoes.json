@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Red",
+    "image": "red",
+    "price": 70,
+    "rating": 5
+  },
+  {
+    "name": "Black",
+    "image": "black",
+    "price": 55,
+    "rating": 4
+  }
+]

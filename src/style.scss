@@ -90,10 +90,10 @@ footer{
 
 main{
   width: 100%;
-  padding: 2rem 8rem;
+  padding: 2rem 4rem;
   background-image: url("images/red.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 30%;
   background-size: 40vw;
   flex: 1;
   display: flex;
@@ -107,7 +107,7 @@ main{
     background-color: #0001;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate3d(-50%, -50%, 0);
     border-radius: 50%;
     z-index: -1;
@@ -115,7 +115,9 @@ main{
 }
 
 .panel{
-  width: 250px;
+  width: 300px;
+  padding: 1rem;
+  background-color: #F5F5F5;
 
   .price{
     margin: 2rem 0;

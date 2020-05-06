@@ -1,12 +1,18 @@
 [
   {
-    "name": "Red",
+    "name": "Mr. Red",
     "image": "red",
     "price": 70,
     "rating": 5
   },
   {
-    "name": "Black",
+    "name": "New Maroon",
+    "image": "maroon",
+    "price": 60,
+    "rating": 4
+  },
+  {
+    "name": "Classic Black",
     "image": "black",
     "price": 55,
     "rating": 4

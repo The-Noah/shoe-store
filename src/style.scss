@@ -181,6 +181,11 @@ main{
 
     &:first-child{
       margin-right: 1rem;
+      transform: rotate(90deg);
+    }
+
+    &:last-child{
+      transform: rotate(-90deg);
     }
   }
 }

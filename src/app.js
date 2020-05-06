@@ -1,8 +1,8 @@
 for(const dropdown of document.querySelectorAll(".dropdown")){
-  const title = dropdown.querySelector("span");
+  const title = dropdown.querySelector("span > span");
   const content = dropdown.querySelector("div");
 
-  title.addEventListener("click", function(e){
+  dropdown.querySelector("span").addEventListener("click", function(e){
     e.stopPropagation();
     content.style.display = content.style.display === "block" ? "none" : "block";
   });

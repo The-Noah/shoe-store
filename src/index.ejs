@@ -23,26 +23,9 @@
       <div class="rating"><span></span><span></span><span></span><span></span><span></span></div>
       <div class="price">$60</div>
       <label>Size</label>
-      <div class="dropdown">
-        <span>Select Size</span>
-        <div>
-          <span>Small</span>
-          <span>Medium</span>
-          <span>Large</span>
-          <span>Extra Large</span>
-        </div>
-      </div>
+      <%- include("dropdown", {title: "Select Size", items: ["Small", "Medium", "Large", "Extra Large"]}) %>
       <label>Quantity</label>
-      <div class="dropdown">
-        <span>1</span>
-        <div>
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-        </div>
-      </div>
+      <%- include("dropdown", {title: "1", items: [1, 2, 3, 4, 5]}) %>
       <button>Buy</button>
     </div>
   </main>

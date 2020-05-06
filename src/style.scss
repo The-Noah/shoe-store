@@ -206,7 +206,8 @@ main{
     background-color: #FFF;
     font-weight: 700;
     line-height: 1em;
-    display: block;
+    display: flex;
+    align-items: center;
     box-shadow: $shadow;
     border-radius: $border-radius;
   }

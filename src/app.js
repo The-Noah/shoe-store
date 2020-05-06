@@ -32,7 +32,6 @@ selector.children[1].addEventListener("click", function(){
   setShoeIndex(1);
 });
 
-setShoeIndex(0);
 function setShoeIndex(value){
   shoeIndex += value;
 
@@ -43,7 +42,7 @@ function setShoeIndex(value){
   }
 
   main.style.backgroundImage = `url("images/${shoes[shoeIndex].image}.png")`;
-  name.innerText = shoes[shoeIndex].name;
+  name.innerHTML = shoes[shoeIndex].name.split(" ").join("<br>");
   price.innerText = `$${shoes[shoeIndex].price}`;
   for(let i = 0; i < stars.length; i++){
     stars[i].innerHTML = shoes[shoeIndex].rating > i ? "&#9733;" : "	&#9734;"

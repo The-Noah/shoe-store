@@ -15,8 +15,6 @@
   <noscript style="text-align:center">Please enable JavaScript</noscript>
   <main>
     <div class="selector">
-      <!-- <span>&#5130;</span>
-      <span>&#5125;</span> -->
       <span><%- include("icon", {icon: "dropdown"}) %></span>
       <span><%- include("icon", {icon: "dropdown"}) %></span>
     </div>
@@ -28,7 +26,7 @@
       <%- include("dropdown", {title: "Select Size", items: ["Small", "Medium", "Large", "Extra Large"]}) %>
       <label>Quantity</label>
       <%- include("dropdown", {title: "1", items: [1, 2, 3, 4, 5]}) %>
-      <button>Buy</button>
+      <button onclick="buy()">Buy</button>
     </div>
   </main>
   <footer>Copyright &copy; 2020 <a href="https://the-noah.github.io" target="_blank" rel="noopener noreferrer">The Noah</a></footer>

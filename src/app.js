@@ -49,3 +49,13 @@ function setShoeIndex(value){
     stars[i].innerHTML = shoes[shoeIndex].rating > i ? "&#9733;" : "	&#9734;"
   }
 }
+
+const size = document.querySelectorAll(".dropdown")[0].querySelector("span > span");
+const quantity = document.querySelectorAll(".dropdown")[1].querySelector("span > span");
+function buy(){
+  if(size.innerText === "Select Size"){
+    return alert("Please select a shoe size");
+  }
+
+  alert(`Buying ${quantity.innerText} ${size.innerText} ${shoes[shoeIndex].name} shoe${quantity.innerText !== "1" ? "s" : ""}`);
+}

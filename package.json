@@ -5,6 +5,7 @@
   "scripts": {
     "build": "static-site-generator",
     "watch": "static-site-generator watch",
+    "dev": "static-site-generator dev",
     "test": "echo \"Error: no test specified\""
   },
   "keywords": [],

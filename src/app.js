@@ -18,7 +18,7 @@ for(const dropdown of document.querySelectorAll(".dropdown")){
 }
 
 let shoeIndex = 0;
-const main = document.querySelector("main");
+const image = document.querySelector(".image");
 const name = document.querySelector("h1");
 const price = document.querySelector(".price");
 const selector = document.querySelector(".selector");
@@ -41,7 +41,7 @@ function setShoeIndex(value){
     shoeIndex = 0;
   }
 
-  main.style.backgroundImage = `url("images/${shoes[shoeIndex].image}.png")`;
+  image.style.backgroundImage = `url("images/${shoes[shoeIndex].image}.png")`;
   name.innerHTML = shoes[shoeIndex].name.split(" ").join("<br>");
   price.innerText = `$${shoes[shoeIndex].price}`;
   for(let i = 0; i < stars.length; i++){

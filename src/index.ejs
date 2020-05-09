@@ -15,13 +15,18 @@
   </header>
   <noscript style="text-align:center">Please enable JavaScript</noscript>
   <main>
+    <div class="image"></div>
     <div class="selector">
       <span><%- include("icon", {icon: "dropdown"}) %></span>
       <span><%- include("icon", {icon: "dropdown"}) %></span>
     </div>
     <div class="panel">
       <h1><%- shoes[0].name.split(" ").join("<br>") %></h1>
-      <div class="rating"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="rating">
+        <% for(let i = 0; i < 5; i++){ %>
+          <span><%- shoes[0].rating > i ? "&#9733;" : "	&#9734;" %></span>
+        <% } %>
+      </div>
       <div class="price">$<%- shoes[0].price %></div>
       <label>Size</label>
       <%- include("dropdown", {title: "Select Size", items: ["Small", "Medium", "Large", "Extra Large"]}) %>

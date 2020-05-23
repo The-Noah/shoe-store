@@ -16,5 +16,11 @@
     "image": "black",
     "price": 55,
     "rating": 4
+  },
+  {
+    "name": "Stylish Orange",
+    "image": "orange",
+    "price": 65,
+    "rating": 5
   }
 ]

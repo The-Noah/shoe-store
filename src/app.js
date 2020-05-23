@@ -28,7 +28,7 @@ selector.children[0].addEventListener("click", function(){
   setShoeIndex(-1);
 });
 
-selector.children[1].addEventListener("click", function(){
+selector.children[2].addEventListener("click", function(){
   setShoeIndex(1);
 });
 
@@ -40,6 +40,8 @@ function setShoeIndex(value){
   }else if(shoeIndex > shoes.length - 1){
     shoeIndex = 0;
   }
+
+  selector.children[1].querySelector("span").innerText = shoeIndex + 1;
 
   image.style.backgroundImage = `url("images/${shoes[shoeIndex].image}.png")`;
   name.innerHTML = shoes[shoeIndex].name.split(" ").join("<br>");

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "static-site-generator start",
+    "start": "static-site-generator dev",
     "build": "static-site-generator",
     "test": "echo \"Error: no test specified\""
   },
